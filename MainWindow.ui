@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1356</width>
+    <height>848</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QGroupBox" name="groupTable">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="title">
+       <string>Таблица</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <widget class="QTableWidget" name="mainTable">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>30</y>
+         <width>961</width>
+         <height>231</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="illnesCombo">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>130</y>
+         <width>221</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Грипп</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>ОРЗ</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ангина</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QPushButton" name="createTable">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>180</y>
+         <width>261</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Построить таблицу</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupCompare">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="title">
+       <string>Сравнение</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <widget class="QGroupBox" name="groupIllness">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>20</y>
+         <width>191</width>
+         <height>221</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Болезни</string>
+       </property>
+       <widget class="QCheckBox" name="ariCheck">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>100</y>
+          <width>81</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>ОРЗ</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="anginaCheck">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>160</y>
+          <width>81</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Ангина</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="fluCheck">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>40</y>
+          <width>81</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Грипп</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupParams">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>20</y>
+         <width>351</width>
+         <height>221</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Параметры</string>
+       </property>
+       <widget class="QRadioButton" name="timeRadio">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>40</y>
+          <width>221</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Длительность лечения</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="sickRadio">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>100</y>
+          <width>211</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Количество заболевших</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="deathRadio">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>160</y>
+          <width>281</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Количество смертельных исходов</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="createGraph">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>120</y>
+         <width>251</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Построить график сравнения</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="circleGroup">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="title">
+       <string>Круговые диаграммы</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <widget class="QPushButton" name="createCircle">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>60</y>
+         <width>111</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Общая 
+статистика 
+смертности</string>
+       </property>
+       <property name="shortcut">
+        <string/>
+       </property>
+       <property name="autoRepeat">
+        <bool>false</bool>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="circleCombo">
+       <property name="geometry">
+        <rect>
+         <x>610</x>
+         <y>80</y>
+         <width>181</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Грипп</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>ОРЗ</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ангина</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QPushButton" name="createIllnessCircle">
+       <property name="geometry">
+        <rect>
+         <x>830</x>
+         <y>80</y>
+         <width>191</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Статистика</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="paramsCombo">
+       <property name="geometry">
+        <rect>
+         <x>610</x>
+         <y>160</y>
+         <width>181</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Смертность</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Заболевания</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Осложнения</string>
+        </property>
+       </item>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
